@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif, Helvetica, Arial, Helvetica;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    background-color: #000022;
+}
+
+.search-box {
+    background-color: #1a1a2e;
+    /* border: 1px solid white; */
+    border-radius: 1px;
+    display: flex;
+    align-items: start;
+    padding: 5px 12px;
+    width: 460px;
+    height: 28px;
+    position: relative;
+    right: 50px;
+}
+
+.search-box i {
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.search-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: medium;
+    flex: 1;
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+
+.search-box:hover {
+    border: 2px solid skyblue;
+}
+
+nav .free-img {
+    position: relative;
+    right: 130px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: 1.5px solid white;
+    width: 48px;
+    height: 30px;
+    background: #111;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    left: 50px;
+}
+
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+.dropdown-content a {
+    background-color: #001242;
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
+
+.dropdown-content a:hover {
+      background: #f1f1f1;
+      color: #001242;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background: #eee;
+      color: #001242;
+    }
+
+    .dropbtn img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn1 {
+    border: 1.5px solid white;
+    width: 75px;
+    height: 30px;
+    background: #0b0b1a;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+}
+
+.dropbtn1:hover {
+    background-color: #fff;
+    color: #000022;
+}
+
+.dropdown-content1 {
+      display: none;
+      position: absolute;
+      background: #0b0b1a;   /* dark background */
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+}
+
+.dropdown-content1 a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between; /* text left, icon right */
+      align-items: center;
+}
+
+.dropdown-content1 a:hover {
+      background: white;
+      color: #0b0b1a;
+}
+
+.show {
+      display: block;
+      position: absolute;
+      right: 10px;
+}
+
+.form .btn-primary {
+    border: 3px solid #ffc300;
+    width: 75px;
+    height: 30px;
+    position: relative;
+    left: 1220px;
+    bottom: 35px;
+    font-size: 16px;
+    background-color: gold;
+}
+
+.form .btn-primary:hover {
+    background-color: hsl(51, 100%, 65%);
+}
+
+.first-container {
+    border: 2px solid #111;
+    min-height: 100vh;
+    padding: 30px;
+    position: relative;
+    bottom: 30px;
+    background-color: blue;
+    color: white;
+    background-image: linear-gradient(-10deg, rgb(7, 40, 94) 35%, rgba(237, 202, 216, 0) 75%, rgb(158, 22, 54));
+}
+
+.first-container .section-container {
+    position: relative;
+    min-height: 150vh;
+    background-image: url("../img/wide-image-becdb4c281c527b989315b2f7ce20378.png");
+    background-repeat: no-repeat;
+    background-position: 470px 29px;
+    background-size: 810px;
+    /* background-blend-mode: screen, lighten; */
+}
+
+.first-container h2 {
+    font-size: 70px;
+    width: 15ch;
+    position: relative;
+    top: 95px;
+    left: 120px;
+}
+
+.first-container p {
+    font-size: 22px;
+    width: 41ch;
+    line-height: 1.5;
+    position: relative;
+    top: 100px;
+    left: 120px;
+    font-family: ;
+}
+
+.form .btn-primary1 {
+    border: 3px solid #ffc300;
+    width: 350px;
+    height: 65px;
+    position: relative;
+    left: 150px;
+    top: 130px;
+    font-size: 16px;
+    background-color: gold;
+    font-size: 25px;
+}
+
+.form .btn-primary1:hover {
+    background-color: hsl(51, 100%, 65%);
+}

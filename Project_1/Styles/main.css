@@ -1,0 +1,758 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+        /* background-color: #000000; */
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0.5;
+    padding: 15px 5px;
+    margin-inline: 0.9em;
+    background-color: #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 0.5px;
+    border-radius: 15px;
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 24px;
+    color: #000000;
+}
+
+.navbar div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar div a {
+    margin-right: 20px;
+    color: #000000;
+}
+
+.navbar div a:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+/* .navbar div a:last-child {
+    position: absolute;
+    right: 50px;
+} */
+
+.navbar .button {
+    position: absolute;
+    top: 1px;
+    border: 2px solid;
+    border-radius: 9px;
+    width: 65px;
+    height: 30px;
+    padding: 2px;
+    font-size: 15px;
+    position: relative;
+    bottom: 12px;
+    background-color: dodgerblue;
+    color: #eee;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.logo img {
+    border-radius: 15px;
+    width: 28px;
+    height: 28px;
+}
+
+.logo-text {
+    position: relative;
+    bottom: 8px;
+}
+
+.container {
+    position: absolute;
+    top: 90px;
+    display: inline-block;
+    margin-inline: 2em;
+    line-height: 1.5;
+    border: 3px solid;
+    border-radius: 25px;
+    background-image: url('../img/Flight_Wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 96%;
+    height: 85%;
+}
+
+h5 {
+    position: relative;
+    top: 30px;
+    padding: 5em;
+}
+
+.container p {
+    position: absolute;
+    top: 60px;
+    padding: 1.5em;
+    font-size: 2.5em;
+    width: 20ch;
+    font-weight: bold;
+}
+
+.container .button {
+    position: relative;
+    top: 160px;
+    left: 70px;
+    padding: 1em;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    color: #eee;
+    cursor: pointer;
+}
+
+.container .button:hover {
+    background-color: #000000;
+}
+
+.popular {
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    padding: 4em;
+    line-height: 2;
+    font-size: 25px;
+}
+
+.popular .discover {
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.sect1 {
+    position: absolute;
+    top: 850px;
+    left: 200px;
+    padding: 2em;
+    border: 3px transparent;
+    border-radius: 20px;
+    height: 45%;
+}
+
+.sect1 .bangkok {
+    border-radius: 15px;
+    height: 80%;
+}
+
+.sect1 .tailor {
+    position: relative;
+    left: 20px;
+    line-height: 2;
+}
+
+.sect1 p {
+    position: relative;
+    left: 20px;
+}
+
+.sect1 .rate1 {
+    position: relative;
+    left: 190px;
+    bottom: 35px;
+    border: 1px;
+    border-radius: 10px;
+    width: 22%;
+    height: 13%;
+    margin-right: 0.5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 15px;
+    background-color: dodgerblue;
+    color: #eee;
+}
+
+.sect2 {
+    position: absolute;
+    top: 850px;
+    left: 545px;
+    padding: 2em;
+    border: 3px transparent;
+    border-radius: 20px;
+    height: 45%;
+}
+
+.sect2 .atlantic {
+    border-radius: 20px;
+    width: 85%;
+    height: 80%;
+}
+
+.sect2 .eko {
+    position: relative;
+    left: 25px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+.sect2 p {
+    position: relative;
+    left: 25px;
+}
+
+.sect2 .rate2 {
+    position: relative;
+    left: 185px;
+    bottom: 35px;
+    border: 1px;
+    border-radius: 10px;
+    width: 19%;
+    height: 13%;
+    margin-right: 0.5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 15px;
+    background-color: dodgerblue;
+    color: #eee;
+}
+
+.sect3 {
+    position: absolute;
+    top: 850px;
+    left: 880px;
+    padding: 2em;
+    border: 3px transparent;
+    border-radius: 20px;
+    height: 45%;
+}
+
+.sect3 .instanbul {
+    border-radius: 20px;
+    width: 85%;
+    height: 80%;
+}
+
+.sect3 .instan {
+    position: relative;
+    left: 20px;
+    word-spacing: 2px;
+    line-height: 2;
+}
+
+.sect3 p {
+    position: relative;
+    left: 20px;
+}
+
+.sect3 .rate3 {
+    position: relative;
+    left: 185px;
+    bottom: 35px;
+    border: 1px;
+    border-radius: 10px;
+    width: 20%;
+    height: 13%;
+    margin-right: 0.5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    font-size: 15px;
+    background-color: dodgerblue;
+    color: #eee;
+}
+
+.container2 {
+    position: absolute;
+    bottom: -700px;
+    left: 400px;
+    line-height: 2;
+}
+
+.container2 h2 {
+    font-size: 45px;
+}
+
+.container2 p {
+    position: relative;
+    left: 120px;
+    word-spacing: 2px;
+    font-style: italic;
+}
+
+.container3 {
+    position: absolute;
+    bottom: -1400px;
+    left: 100px;
+    border: 3px;
+    width: 80%;
+    height: 85%;
+}
+
+.container3 h2 {
+    position: relative;
+    left: 390px;
+    bottom: 510px;
+    padding: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    width: 32ch;
+    word-spacing: 4px;
+}
+
+.container3 .img1 {
+    border: 1px #333;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 90%;
+}
+
+.container3 p {
+    position: relative;
+    left: 420px;
+    bottom: 530px;
+    padding: 1em;
+    width: 80ch;
+}
+
+.container3 button {
+    position: relative;
+    bottom: 499px;
+    left: 440px;
+    border: 2px;
+    border-radius: 10px;
+    width: 60%;
+    height: 18%;
+    cursor: pointer;
+    background-image: url('img/Prepare-for-Take-Off-with-Globus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.rating {
+    position: absolute;
+    bottom: -1650px;
+    left: 210px;
+    border: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    padding: 2em;
+    width: 20%;
+    height: 25%;
+    /* transition: transform 0.2s ease-in-out; */
+}
+
+/* .rating:hover {
+    transform: translateY(-5px);
+} */
+
+.rating p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 8px;
+    color: #333;
+}
+
+.rating .years {
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: dodgerblue;
+}
+
+/* .rating h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5em;
+    font-size: 1.2rem;
+  color: #333;
+} */
+
+.rating1 {
+    position: absolute;
+    bottom: -1650px;
+    left: 560px;
+    border: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    padding: 2em;
+    width: 20%;
+    height: 25%;
+}
+
+.rating1 p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 8px;
+    color: #333;
+}
+
+.rating1 .clients {
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: dodgerblue;
+}
+
+.rating2 {
+    position: absolute;
+    bottom: -1650px;
+    left: 910px;
+    border: 10px solid transparent;
+    border-radius: 30px;
+    /* transition: border-color 0.4 ease-in-out; */
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    padding: 2em;
+    width: 20%;
+    height: 25%;
+}
+
+.rating2 p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 18px;
+    color: #333;
+}
+
+.rating2 .overall {
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: dodgerblue;
+}
+
+.container4 {
+    position: absolute;
+    bottom: -1950px;
+    left: 200px;
+    line-height: 1.5;
+}
+
+.container4 .wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.container4 h2 {
+    font-size: 35px;
+    width: 50ch;
+}
+
+.container4 p {
+    display: flex;
+    justify-content: center;
+    word-spacing: 2px;
+    font-style: italic;
+    line-height: 2;
+}
+
+.container5 {
+    position: absolute;
+    top: 2620px;
+    left: 45px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    width: 30%;
+    height: 55%;
+    font-style: oblique;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container5:hover {
+    transform: translateY(-10px);
+}
+
+.container5 img {
+    position: relative;
+    top: 40px;
+    left: 185px;
+}
+
+.container5 h3 {
+    position: relative;
+    top: 55px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container5 span {
+    display: flex;
+    justify-content: center;
+}
+
+.container5 p {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.5;
+    /* width: 42ch; */
+}
+
+.container6 {
+    position: absolute;
+    top: 2620px;
+    left: 477px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    width: 30%;
+    height: 55%;
+    font-style: oblique;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container6:hover {
+    transform: translateY(-10px);
+}
+
+.container6 img {
+    position: relative;
+    top: 40px;
+    left: 185px;
+}
+
+.container6 h3 {
+    position: relative;
+    top: 55px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container6 span {
+    display: flex;
+    justify-content: center;
+}
+
+.container6 p {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.5;
+}
+
+.container7 {
+    position: absolute;
+    top: 2620px;
+    left: 910px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px 6px rgba(172, 170, 170, 0.3);
+    width: 30%;
+    height: 55%;
+    font-style: oblique;
+    transition: transform 0.2s ease-in-out;
+}
+
+.container7:hover {
+    transform: translateY(-10px)
+}
+
+.container7 img {
+    position: relative;
+    top: 40px;
+    left: 185px;
+}
+
+.container7 h3 {
+    position: relative;
+    top: 55px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container7 span {
+    display: flex;
+    justify-content: center;
+}
+
+.container7 p {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.5;
+}
+
+.container8 {
+    position: absolute;
+    bottom: -2950px;
+    border: 3px solid transparent;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(228, 227, 227, 0.863);
+}
+
+.container8 h2 {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    padding: 0.5em;
+}
+
+.container8 p {
+    position: absolute;
+    top: 110px;
+    width: 40ch;
+    left: 80px;
+    line-height: 1.5;
+    color: rgb(133, 130, 130);
+}
+
+.container8 .social {
+    position: absolute;
+    top: 230px;
+    left: 160px;
+}
+
+.container8 .social .facebook {
+    position: absolute;
+    right: 70px;
+}
+
+.container8 .social .ig {
+    position: absolute;
+    left: 70px;
+}
+
+.container8 .quick {
+    position: absolute;
+    top: 60px;
+    left: 550px;
+}
+
+.container8 div{
+    position: absolute;
+    top: 95px;
+    left: 560px;
+    line-height: 2;
+}
+
+.container8 ul {
+    list-style-type: none;
+}
+
+.container8 div a {
+    color: rgb(133, 130, 130);
+}
+
+.container8 div a:hover {
+    color: dodgerblue;
+}
+
+.container8 .contact {
+    position: absolute;
+    top: 62px;
+    left: 780px;
+}
+
+.container8 .contact-me {
+    position: absolute;
+    top: 90px;
+    left: 760px;
+    line-height: 2.5;
+}
+
+.container8 .mail {
+    position: relative;
+    top: 6.2px;
+}
+
+.container8 .call {
+    position: relative;
+    top: 8px;
+}
+.container8 .locate {
+    position: relative;
+    top: 9px;
+}
+
+.container8 article h2 {
+    position: absolute;
+    top: 44px;
+    left: 1010px
+}
+
+.container8 article .p2 {
+    position: absolute;
+    top: 95px;
+    left: 980px;
+}
+
+.container8 article .form {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+}
+
+.container8 .form .input-name {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    padding: 1em;
+}
+
+.container8 .email {
+    position: absolute;
+    top: 160px;
+    left: 80px;
+}
+
+.container8 .form .input-email {
+    border: 2px solid;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    padding: 1em;
+}
+
+.container8 button {
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 285px;
+    height: 40px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    font-weight: bolder;
+    font-size: large;
+    color: whitesmoke;
+}
+
+.container8 footer {
+    position: absolute;
+    top: 250px;
+    left: 360px;
+}
+
+.container8 footer .p3 {
+    position: relative;
+    top: 150px;
+    width: 50ch;
+}
+
+.container8 footer .p4 {
+    position: relative;
+    top: 150px;
+    left: 140px;
+}

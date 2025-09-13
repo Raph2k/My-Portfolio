@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Ralph Onazi">
+    <meta name="description" content="Cloning a Webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralph's Project 2</title>
+    <link rel="icon" href="img/fcc_primary_small_icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+    
+    <nav class="container">
+        <!-- <div class="form-container">
+                <form action="/search" method="GET" class="search-bar">
+        <input type="search" id="search-input" name="query" placeholder="Search 12,000+ news articles, tutorials, and books" class="input-search">
+        <button type="submit">Search</button>
+    </form>
+        </div> -->
+        <div class="search-box">
+            <i class="fa fa-search"></i>
+    <input type="text" placeholder="Search 12,000+ news articles, tutorials, and books" aria-label="Search through articles">
+        </div>
+        <!-- <form>
+  <label for="search" class="sr-only">Search</label>
+  <input id="search" type="text" placeholder="Search 12,000+ news articles, tutorials, and books" aria-label="Search through articles, tutorials, and books">
+  <button aria-label="Search">
+    <i class="fa fa-search"></i>
+  </button>
+</form> -->
+
+        <div class="free-img">
+            <a href="#"><img src="./img/download-freecodecamp.jpeg" alt="freecodecamp" width="220" height="30"></a>
+        </div>
+        <div class="dropdown">
+        <button aria-label="Search" class="dropbtn" onclick="toggleDropdown()">
+        <i class="fa-solid fa-globe"></i> <!-- Change Language -->
+        </button>
+            <div class="dropdown-content" id="myDropdown1">
+      <a href="#">English</a>
+      <a href="#">French</a>
+      <a href="#">Spanish</a>
+      <a href="#">German</a>
+    </div>
+        </div>
+        <div class="dropdown1">
+            <button class="dropbtn1" onclick="toggleDropdown()">
+        Menu
+        </button>
+            <div class="dropdown-content1" id="myDropdown">
+      <a href="#">Donate</a>
+      <a href="#">Curriclum</a>
+      <a href="#">Forum <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#">News <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#">Radio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#">Contribute <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="#">Podcast <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+        </div>
+    </nav>
+    <form action="https://httpbin.org/get" method="get" class="form"><button aria-label="submit" type="submit" class="btn-primary">Sign in</button>
+    </form>
+
+    <section class="first-container">
+        <div class="section-container">
+        <h2>
+            Build Your Skills for Free.
+        </h2>
+        <p>
+            Advance your career by learning in-demand skills in Programming, DevOps, Cybersecurity, AI Engineering, and English for Developers.
+        </p>
+        
+        <form action="https://httpbin.org/get" method="get" class="form"><button aria-label="submit" type="submit" class="btn-primary1">Get started (it's free)</button>
+    </form>
+    <div>
+        <p class="testimony">
+            More thank <strong>100,000</strong>freeCodeCamp graduates work in companies such as
+        </p>
+    </div>
+    </div>
+    
+    </section>
+
+    <script>
+    function toggleDropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn1')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content1");
+        for (let i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].classList.remove("show");
+        }
+      }
+    }
+  </script>
+</body>
+</html>
